@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="View.StudentProgressView">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="355" height="671"/>
+    </constraints>
+    <properties>
+      <background color="-16766143"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="7e8ca" binding="ContainerPanel" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2693643"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="69b66" binding="NavBarPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2693643"/>
+            </properties>
+            <border type="line">
+              <title-color color="-6700849"/>
+            </border>
+            <children>
+              <component id="871a8" class="javax.swing.JLabel" binding="studentName">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="Student Name"/>
+                </properties>
+              </component>
+              <component id="1a274" class="javax.swing.JLabel" binding="logoLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="82507" binding="studentProgressPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="30" left="0" bottom="30" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="29"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-2693643"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c93c4" class="javax.swing.JLabel" binding="StudentProgressLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="Student Progress"/>
+                </properties>
+              </component>
+              <component id="fe925" class="javax.swing.JProgressBar" binding="StudentProgressBar">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <indeterminate value="false"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <scrollpane id="72e6c">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="300"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-6700849"/>
+              <enabled value="false"/>
+              <horizontalScrollBarPolicy value="30"/>
+              <inheritsPopupMenu value="false"/>
+              <opaque value="true"/>
+              <requestFocusEnabled value="false"/>
+              <verticalScrollBarPolicy value="20"/>
+              <visible value="true"/>
+              <wheelScrollingEnabled value="true"/>
+            </properties>
+            <border type="none">
+              <font/>
+              <title-color color="-4473925"/>
+            </border>
+            <children>
+              <component id="5264c" class="javax.swing.JList" binding="listTopicDisplay">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <vspacer id="3efea">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="30"/>
+              </grid>
+            </constraints>
+          </vspacer>
+          <component id="747f0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="189" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <foreground color="-16777216"/>
+              <labelFor value="72e6c"/>
+              <text value="List of Topics:"/>
+            </properties>
+          </component>
+          <grid id="8059b" binding="panelInfoArea" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ea795" class="javax.swing.JTextArea" binding="displayInfo">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="50" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <font size="14"/>
+                  <wrapStyleWord value="true"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="e3ee2" class="javax.swing.JLabel" binding="displayInfoLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="14"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
